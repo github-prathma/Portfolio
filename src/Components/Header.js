@@ -3,6 +3,9 @@ import "../App.css"
 import "../CSS/Header.css"
 import Portfolio from '../Images/PortfolioIcon.png'
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton.js';
+import PersonPinIcon from '@material-ui/icons/PersonPin';
+import PermPhoneMsgIcon from '@material-ui/icons/PermPhoneMsg';
+import HomeIcon from '@material-ui/icons/Home';
 
 class Header extends Component {
 
@@ -30,6 +33,25 @@ class Header extends Component {
                     </nav>
                 </div>
                 
+                <div className="social_info">
+                    <ul>
+                        <li>
+                            <button>
+                                <PersonPinIcon/>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <PermPhoneMsgIcon/>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <HomeIcon/>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
                 
                 
             </div>
