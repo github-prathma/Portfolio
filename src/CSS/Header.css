@@ -4,7 +4,6 @@
     padding: 0px 15px;
     justify-content: space-between;
     position: sticky;
-    /* background-color: whitesmoke; */
     background: linear-gradient(170deg, rgb(249, 248, 253) 50%, rgb(230, 232, 253) 60%);
     z-index: 100;
     top: 0;
