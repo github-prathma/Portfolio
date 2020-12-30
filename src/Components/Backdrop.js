@@ -5,9 +5,14 @@ class Backdrop extends Component {
 
     render() {
 
+        let backDropClasses = 'backdrop'
+
+        if (this.props.fromHeaderTab) {
+            backDropClasses = 'backdrop fromHeader'
+        } 
         return (
 
-            <div className="backdrop" onClick={this.props.click}></div>
+            <div className={backDropClasses} onClick={this.props.click}></div>
         )
     }
 }

@@ -18,6 +18,12 @@ class App extends Component {
     })
   }
 
+  closeProfilePage = () => {
+    this.setState({
+      openSocialProfiles:false
+    })
+  }
+
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
       return {sidedrawerOpen: !prevState.sidedrawerOpen};
@@ -36,7 +42,7 @@ class App extends Component {
         <Header drawerClickHandler={this.drawerToggleClickHandler} socialProfileClickHandler={this.openProfilePage}/>
         <SideDrawer show={this.state.sidedrawerOpen}/>
         {this.state.sidedrawerOpen && <Backdrop click={this.backdropClickHandler}/>}
-        {this.state.openSocialProfiles && <SocialProfile show={this.state.openSocialProfiles}/>}
+        {this.state.openSocialProfiles && <SocialProfile show={this.state.openSocialProfiles} closePage={this.closeProfilePage}/>}
       </div>
     );
   }
