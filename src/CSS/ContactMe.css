@@ -1,0 +1,175 @@
+.contact-me_page {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 200;
+    animation: MoveUpDown 0.3s linear;
+}
+
+@keyframes MoveUpDown{
+    0%{height:0%}
+    100%{height:100%}
+}
+
+.contact-me_page.open {
+    height: 100%;
+    background-image: radial-gradient(rgba(247, 227, 229, 0.95) 40%, rgba(192, 175, 211, 0.95) 80%), url("../Images/ContactMe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+
+.spacer {
+    flex: 1;
+}
+
+.contact-me_page.open .cancel {
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.contact-me_page.open .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.contact-me_page.open .close-button >  .MuiSvgIcon-root {
+    color: black;
+    height:50px;
+    width: 50px;
+}
+.contact-me_page.open .close-button:hover {
+    outline: 0;
+}
+
+.contact-me_page.open .close-button:focus {
+    outline: 0;
+}
+
+.contact-details {
+    background-color: transparent;
+    /* height: 60%; */
+    width: 70%;
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.contact-details_info  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.contact-details  .title {
+    color: #440047;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    word-spacing: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.contact-details_info .contact-details_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+.contact-details_info .contact-details_icon {
+ 
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.email-form ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.email-form li {
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.email-form a {
+    color: rgb(41, 42, 41);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.call-me ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.call-me li {
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.call-me a {
+    color: rgb(41, 42, 41);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+@media(max-width: 768px) {
+    .contact-details  .title {
+        font-size: 30px;
+    }
+
+    .contact-me_page.open .contact-details {
+        width: 100%;
+        top: 80;
+    }
+    
+    .contact-details_info {
+        display: block;
+        justify-content: center;
+    }
+
+    .contact-details_icon {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contact-details_info .contact-details_icon > img {
+        display: inline-block;
+        justify-self: center;
+        height: 40%;
+        width: 60%;
+        margin-left: 20%
+    }
+
+    .email-form a {
+        font-size: 1.2rem;
+    }
+
+    .call-me a {
+        font-size: 1.2rem;
+    }
+}

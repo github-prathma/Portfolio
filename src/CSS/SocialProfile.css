@@ -69,11 +69,10 @@
 
 }
 
-
 .social-info_page.open .all-profiles_modal .title {
     color: #440047;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
     word-spacing: 0.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -132,6 +131,9 @@
 }
 
 @media(max-width: 768px) {
+    .social-info_page.open .all-profiles_modal .title {
+        font-size: 30px;
+    }
     .social-info_page.open .all-profiles {
         width: 100%;
         height: 100%;
@@ -140,7 +142,6 @@
     
     .social-info_page.open .all-profiles_modal {
         background-color: transparent;
-        height: 100%;
         width: 100%;
         position:absolute; 
         top:80;

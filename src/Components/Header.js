@@ -9,16 +9,6 @@ import HomeIcon from '@material-ui/icons/Home';
 
 class Header extends Component {
 
-    state = {
-        showProfilePage: false
-    }
-
-    clickedProfile = () => {
-        this.setState({
-            showProfilePage: true
-        })
-    }
-
     render() {
         return (
             <div className="header"> 
@@ -51,12 +41,12 @@ class Header extends Component {
                             </button>
                         </li>
                         <li>
-                            <button>
+                            <button onClick={this.props.contactMeClickHandler}>
                                 <PermPhoneMsgIcon/>
                             </button>
                         </li>
                         <li>
-                            <button>
+                            <button onClick={this.props.addressClickHandler}>
                                 <HomeIcon/>
                             </button>
                         </li>
